@@ -1,5 +1,5 @@
 {
-	"name": "portfolio",
+	"name": "global_opt",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
@@ -8,7 +8,7 @@
 	},
 	"author": "Eugene Kos",
 	"license": "ISC",
-	"homepage": "https://github.com/MstrSid/practice_uber#readme",
+	"homepage": "https://github.com/MstrSid/global_opt#readme",
 	"devDependencies": {
 		"browser-sync": "^2.27.5",
 		"gulp": "^4.0.2",
@@ -25,5 +25,8 @@
 		"last 2 version",
 		"> 0.2%",
 		"not dead"
-	]
+	],
+	"dependencies": {
+		"npm": "^8.1.3"
+	}
 }
