@@ -1,0 +1,17 @@
+@use "../base/variables";
+
+.button {
+	width: 160px;
+	height: 45px;
+	margin-left: 20px;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.83;
+	text-align: center;
+	color: #fff;
+	background-color: variables.$main_color;
+	text-transform: uppercase;
+	box-shadow: none;
+	border: none;
+	border-radius: 25px;
+}

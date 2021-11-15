@@ -1,8 +1,14 @@
-@import "libs/bootstrap-reboot.min";
-@import "libs/animate.min";
+@use "libs/bootstrap-reboot.min";
+@use "libs/animate.min";
+@use "libs/fonts";
+@use "base/variables";
+@use "blocks/titles";
+@use "blocks/buttons";
+@use "blocks/promo";
+@use "blocks/header";
 
 * {
-	font-family: "Century Gothic", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-weight: bold;
 	margin: 0;
 	padding: 0;
