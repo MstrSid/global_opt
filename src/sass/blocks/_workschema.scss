@@ -1,0 +1,46 @@
+@use "../base/mixins";
+
+.workschema {
+	padding: 51px 0 46px 0;
+	background-color: #f3f3f3;
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+	&__item {
+		width: 262px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 26px;
+		margin-right: 23px;
+		&-imagebox {
+			width: 65px;
+			height: 65px;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+			
+		}
+		&-descr {
+			margin-top: 12px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+		}
+		&-title {
+			@include mixins.item-title;
+			text-align: center;
+		}
+		&-text {
+			@include mixins.item-descr;
+			text-align: justify;
+			margin-top: 6px;
+			text-align: center;
+		}
+	}
+}
