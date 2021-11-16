@@ -1,6 +1,8 @@
 @use "libs/bootstrap-reboot.min";
 @use "libs/animate.min";
 @use "libs/fonts";
+@use "libs/owl";
+@use "libs/owl-theme-default";
 @use "base/variables";
 @use "blocks/titles";
 @use "blocks/buttons";
@@ -13,6 +15,7 @@
 @use "blocks/prices";
 @use "blocks/managers";
 @use "blocks/workschema";
+@use "blocks/reviews";
 
 * {
 	font-family: "Roboto", sans-serif;
