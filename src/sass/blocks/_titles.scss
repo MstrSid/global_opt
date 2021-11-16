@@ -3,6 +3,7 @@
 	font-size: 26px;
 	line-height: normal;
 	text-align: center;
+	text-transform: uppercase;
 	&_thin {
 		font-weight: 300;
 	}
@@ -30,5 +31,8 @@
 	}
 	&_fsz19 {
 		font-size: 19px;
+	}
+	&_fsz21 {
+		font-size: 21px;
 	}
 }
