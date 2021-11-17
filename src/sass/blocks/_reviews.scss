@@ -27,9 +27,10 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		&-image {
+		&-imagebox {
 			width: 114px;
 			height: 114px;
+			margin: 0 auto;
 			img {
 				width: 100%;
 			}
