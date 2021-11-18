@@ -91,4 +91,9 @@
 		height: 57px;
 		font-size: 15px;
 	}
+	&__button-link{
+		&:hover{
+			text-decoration: none;
+		}
+	}
 }
