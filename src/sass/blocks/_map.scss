@@ -1,0 +1,36 @@
+@use "../base/variables";
+
+.map {
+	min-height: 500px;
+	.dg-label {
+		&__content {
+			padding: 20px;
+			color: #000;
+			font-size: 14px;
+			font-family: "Roboto";
+			font-weight: 500;
+			background-color: #fff;
+			border: none;
+			border-radius: 10px;
+			line-height: 1.4;
+			span {
+				margin: 0;
+				display: block;
+				color: variables.$main_color;
+				font-family: "Roboto";
+				font-weight: 700;
+				margin-bottom: 4px;
+				padding: 0;
+			}
+			a {
+				color: variables.$main_color;
+				font-family: "Roboto";
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+#map {
+	height: 100%;
+}

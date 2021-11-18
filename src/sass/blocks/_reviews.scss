@@ -1,17 +1,25 @@
 .reviews {
 	min-height: 470px;
 	padding: 51px 0 65px 0;
-	&__slider{
-		.owl-nav{
+	&__slider {
+		.owl-nav {
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
 			top: 50px;
-			.owl-prev{
-				margin-right: 114px;
-
+			.owl-next,
+			.owl-prev {
+				&:hover {
+					background: unset;
+				}
+				&:focus {
+					outline: none;
+				}
 			}
-			.owl-next{
+			.owl-prev {
+				margin-right: 114px;
+			}
+			.owl-next {
 				margin-left: 114px;
 			}
 		}
@@ -49,20 +57,21 @@
 	}
 }
 
-.owl-item {
-	.reviews__item{
-		transition: 0.5s all;
-		transform: scale(0.5);
-		opacity: 0.5;
-	}
-	&.active {
-		&.center {
-			.reviews__item{
-				transition: 0.5s all;
-				opacity: unset;
-				transform: unset;
+.owl {
+	&-item {
+		.reviews__item {
+			transition: 0.5s all;
+			transform: scale(0.5);
+			opacity: 0.5;
+		}
+		&.active {
+			&.center {
+				.reviews__item {
+					transition: 0.5s all;
+					opacity: unset;
+					transform: unset;
+				}
 			}
 		}
 	}
 }
-
