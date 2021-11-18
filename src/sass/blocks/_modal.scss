@@ -1,0 +1,63 @@
+@use "../base/variables";
+
+.overlay {
+	display: none;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.56);
+}
+
+.modal {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	min-height: 400px;
+	width: 402px;
+	display: flex;
+	&__wrapper {
+		width: 362px;
+		padding: 35px 24px 40px 24px;
+		background-color: #ececec;
+	}
+	&__subtitle {
+		font-weight: 700;
+		font-size: 19px;
+		line-height: 19px;
+		text-align: center;
+	}
+	&__descr {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 14px;
+		text-align: center;
+		margin-top: 10px;
+	}
+	&__close {
+		position: absolute;
+		width: 21px;
+		height: 21px;
+		right: 0;
+		top: 0;
+		margin: 0;
+		cursor: pointer;
+		color: variables.$main_color;
+		font-size: 36px;
+		line-height: 21px;
+		font-weight: 700;
+	}
+	&_mini {
+		min-height: 140px;
+		line-height: none;
+		.modal__descr {
+			font-size: 18px;
+			line-height: 25px;
+		}
+	}
+}
+
+#thankyou {
+	display: none;
+}
