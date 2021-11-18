@@ -128,7 +128,7 @@ DG.then(function () {
 		scrollWheelZoom: false
 	});
 	myIcon = DG.icon({
-		iconUrl: '../icons/bullit.png',
+		iconUrl: 'icons/bullit.png',
 		iconSize: [48, 48]
 	});
 	DG.marker([55.74804966418222, 37.62726970531636], {
