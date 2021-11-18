@@ -8,7 +8,7 @@ $(document).ready(function () {
 		autoWidth: true,
 		dots: false,
 		nav: true,
-		navText: ["<img src='../img/reviews/arrow_left.png'>", "<img src='../img/reviews/arrow_right.png'>"],
+		navText: ["<img src='img/reviews/arrow_left.png'>", "<img src='img/reviews/arrow_right.png'>"],
 		responsive: {
 			600: {
 				items: 3
