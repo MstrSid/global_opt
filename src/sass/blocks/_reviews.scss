@@ -2,6 +2,7 @@
 	min-height: 470px;
 	padding: 51px 0 65px 0;
 	&__slider {
+		z-index: 0;
 		.owl-nav {
 			position: absolute;
 			left: 50%;
