@@ -20,6 +20,7 @@
 @use "blocks/map";
 @use "blocks/footer";
 @use "blocks/modal";
+@use "blocks/hamburger";
 
 * {
 	font-family: "Roboto", sans-serif;
@@ -32,3 +33,5 @@
 	width: 1140px;
 	margin: 0 auto;
 }
+
+@import "blocks/media";

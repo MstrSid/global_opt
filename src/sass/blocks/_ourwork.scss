@@ -13,11 +13,15 @@
 		grid-template: 1fr / repeat(3, 1fr);
 		justify-content: space-between;
 		align-items: flex-start;
+		column-gap: 10px;
 	}
 	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		&-imagebox {
-			width: 360px;
-			height: 210px;
+			max-width: 360px;
+			max-height: 210px;
 		}
 		&-image {
 			width: 100%;

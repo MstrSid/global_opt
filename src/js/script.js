@@ -4,15 +4,36 @@ $(document).ready(function () {
 		center: true,
 		items: 3,
 		loop: true,
-		margin: -100,
-		autoWidth: true,
+		margin: -50,
 		dots: false,
 		nav: true,
 		navText: ["<img src='img/reviews/arrow_left.png'>", "<img src='img/reviews/arrow_right.png'>"],
 		responsive: {
+			300: {
+				items: 1,
+				nav: false,
+				margin: 50
+			},
+			550: {
+				items: 1,
+				margin: 50
+			},
 			600: {
-				items: 3
-			}
+				items: 1,
+				margin: 50
+			},
+			700: {
+				items: 1,
+				margin: 100
+			},
+			800: {
+				items: 3,
+				margin: -50
+			}	,
+			900: {
+				items: 3,
+				margin: -50
+			}						
 		}
 	});
 	/* owl end */
@@ -72,8 +93,6 @@ $(document).ready(function () {
 
 	$('input[name=phone]').mask("+375(99)999-99-99");
 	/* validation form end */
-
-	/* smooth scroll start*/
 
 	/* smooth scroll start*/
 	$('a').on('click', function (e) {
@@ -142,3 +161,23 @@ DG.then(function () {
 		});
 });
 /* 2gis maps end */
+
+/* hamburger event start*/
+window.addEventListener('DOMContentLoaded', () => {
+	const menu = document.querySelector('.header__menu'),
+		menuItem = document.querySelectorAll('.header__menu-item'),
+		hamburger = document.querySelector('.hamburger');
+
+	hamburger.addEventListener('click', () => {
+		hamburger.classList.toggle('hamburger_active');
+		menu.classList.toggle('header__menu_active');
+	});
+
+	menuItem.forEach(item => {
+		item.addEventListener('click', () => {
+			hamburger.classList.toggle('hamburger_active');
+			menu.classList.toggle('header__menu_active');
+		});
+	});
+});
+/* hamburger event end*/
