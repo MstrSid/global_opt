@@ -1,8 +1,29 @@
-@import "libs/bootstrap-reboot.min";
-@import "libs/animate.min";
+@use "libs/bootstrap-reboot.min";
+@use "libs/animate.min";
+@use "libs/fonts";
+@use "libs/owl";
+@use "libs/owl-theme-default";
+@use "base/variables";
+@use "blocks/titles";
+@use "blocks/buttons";
+@use "blocks/promo";
+@use "blocks/header";
+@use "blocks/benefits";
+@use "blocks/ourwork";
+@use "blocks/divider";
+@use "blocks/agent";
+@use "blocks/prices";
+@use "blocks/managers";
+@use "blocks/workschema";
+@use "blocks/reviews";
+@use "blocks/questions";
+@use "blocks/map";
+@use "blocks/footer";
+@use "blocks/modal";
+@use "blocks/hamburger";
 
 * {
-	font-family: "Century Gothic", sans-serif;
+	font-family: "Roboto", sans-serif;
 	font-weight: bold;
 	margin: 0;
 	padding: 0;
@@ -12,3 +33,5 @@
 	width: 1140px;
 	margin: 0 auto;
 }
+
+@import "blocks/media";

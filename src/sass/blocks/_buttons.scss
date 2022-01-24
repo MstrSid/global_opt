@@ -1,0 +1,19 @@
+@use "../base/variables";
+
+.button {
+	width: 160px;
+	height: 45px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.83;
+	text-align: center;
+	color: #fff;
+	background-color: variables.$main_color;
+	text-transform: uppercase;
+	box-shadow: none;
+	border: none;
+	border-radius: 25px;
+	&:focus {
+		outline: none;
+	}
+}

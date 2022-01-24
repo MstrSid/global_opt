@@ -1,0 +1,43 @@
+@use "../base/mixins";
+
+.benefits {
+	min-height: 590px;
+	padding: 58px 0 51px 0;
+	background-color: #f3f3f3;
+	&__title {
+		text-transform: uppercase;
+	}
+	&__list {
+		margin-top: 31px;
+		display: grid;
+		grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+		justify-content: space-between;
+		align-items: flex-start;
+		column-gap: 62px;
+	}
+	&__item {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		&-imagebox {
+			padding-top: 10px;
+			margin-right: 17px;
+			width: 63px;
+		}
+		&-image {
+			max-width: 100%;
+			object-fit: contain;
+		}
+		&-wrapper {
+			width: 447px;
+			height: 107px;
+		}
+		&-header{
+			@include mixins.item-title
+		}
+		&-descr{
+			margin-top: 6px;
+			@include mixins.item-descr
+		}
+	}
+}

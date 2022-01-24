@@ -1,50 +1,13 @@
-@mixin before_circle {
-	&::before {
-		position: absolute;
-		content: "";
-		width: 36px;
-		height: 36px;
-		border-radius: 100%;
-		background: $main_color;
-		z-index: -1;
-		top: -25%;
-		left: 0;
-	}
+@use "variables";
+
+@mixin item-title {
+	font-size: 16px;
+	color: variables.$main_color;
+	font-weight: 700;
 }
 
-@mixin before_circle_small {
-	&:before {
-		position: absolute;
-		content: "";
-		width: 15px;
-		height: 15px;
-		border-radius: 100%;
-		background: $main_color;
-		top: 50%;
-		transform: translateY(-50%);
-		left: -6px;
-	}
-}
-
-@mixin vertical_line {
-	&:after {
-		content: "";
-		width: 2px;
-		height: calc(100% + 16px);
-		position: absolute;
-		top: -16px;
-		left: 0;
-		background-color: #000;
-	}
-}
-
-@mixin horizontal_line {
-	&:before {
-		content: "";
-		position: absolute;
-		width: 35px;
-		height: 2px;
-		background-color: #000;
-		top: 62px;
-	}
+@mixin item-descr {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.57;
 }

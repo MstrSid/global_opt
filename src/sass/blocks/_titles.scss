@@ -1,0 +1,38 @@
+.title {
+	color: #fff;
+	font-size: 26px;
+	line-height: normal;
+	text-align: center;
+	text-transform: uppercase;
+	&_thin {
+		font-weight: 300;
+	}
+	&_dark {
+		color: #2e2e2e;
+	}
+	&_fsz19 {
+		font-size: 19px;
+	}
+	&_fsz21 {
+		font-size: 21px;
+	}
+}
+
+.subtitle {
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.14;
+	text-align: center;
+	&_white {
+		color: #fff;
+	}
+	&_dark {
+		color: #2e2e2e;
+	}
+	&_fsz19 {
+		font-size: 19px;
+	}
+	&_fsz21 {
+		font-size: 21px;
+	}
+}

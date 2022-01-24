@@ -1,0 +1,44 @@
+@use "../base/mixins";
+
+.ourwork {
+	min-height: 619px;
+	padding: 51px 0 57px 0;
+	&__subtitle {
+		max-width: 880px;
+		margin: 17px auto 0 auto;
+	}
+	&__items-wrapper {
+		margin-top: 37px;
+		display: grid;
+		grid-template: 1fr / repeat(3, 1fr);
+		justify-content: space-between;
+		align-items: flex-start;
+		column-gap: 10px;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&-imagebox {
+			max-width: 360px;
+			max-height: 210px;
+		}
+		&-image {
+			width: 100%;
+			object-fit: cover;
+		}
+		&-descr{
+			max-width: 360px;
+			margin-top: 28px;
+			text-align: center;
+		}
+		&-title{
+			@include mixins.item-title;
+		}
+		&-text{
+			@include mixins.item-descr;
+			text-align: justify;
+			margin-top: 6px;
+		}
+	}
+}
